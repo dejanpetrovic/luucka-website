@@ -1,9 +1,7 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, BarChart3, Settings, Database, ShieldCheck, CheckCircle2, TrendingUp, Users, PieChart, Activity, Zap, Layers, Search, AlertCircle, Landmark, Briefcase, UserCheck, CircleDollarSign } from 'lucide-react';
 import { Button, Card, Section, Badge, FadeIn, ParallaxBackground } from '../components/ui';
-import { SEO } from '../components/SEO';
 
 const Hero = () => (
   <section className="relative overflow-hidden bg-navy-900 pt-20 pb-32 lg:pt-32 lg:pb-40">
@@ -341,10 +339,6 @@ const Process = () => (
 const Home = () => {
   return (
     <>
-      <SEO 
-        title="Institutional-Grade CFO Services" 
-        description="Strategic financial leadership for middle-market companies ($5M-$50M). Fractional CFO, Automation, ERP Implementation, and Due Diligence services by former EBRD Team Leader."
-      />
       <Hero />
       <ProblemSection />
       <ServicesOverview />

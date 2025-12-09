@@ -1,16 +1,10 @@
-
 import React from 'react';
 import { Section, Button, Card, Badge, FadeIn, ParallaxBackground, AccordionItem } from '../../components/ui';
 import { Database, CheckCircle2, AlertTriangle, Layers, Settings } from 'lucide-react';
-import { SEO } from '../../components/SEO';
 
 const ERPImplementation = () => {
   return (
     <>
-      <SEO 
-        title="ERP Implementation Services (NetSuite, Dynamics, SAP)" 
-        description="Fixed-price ERP implementation by a CFO. NetSuite, Microsoft Dynamics, and SAP Business One. Operational focus with built-in automation layer."
-      />
       <section className="relative overflow-hidden bg-navy-900 pt-20 pb-24 text-center px-4">
         <ParallaxBackground imageUrl="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" />
         <FadeIn className="relative max-w-4xl mx-auto">

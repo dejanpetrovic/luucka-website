@@ -1,8 +1,6 @@
-
 import React from 'react';
 import { Section, Button, Card, Badge, FadeIn, ParallaxBackground, CountUp } from '../../components/ui';
 import { ShoppingCart, Truck, Globe, Factory, CheckCircle2 } from 'lucide-react';
-import { SEO } from '../../components/SEO';
 
 interface IndustryContent {
   title: string;
@@ -12,7 +10,6 @@ interface IndustryContent {
   solutions: string[];
   metrics: { prefix?: string; value: number; suffix?: string; label: string; decimals?: number }[];
   image: string;
-  seoDescription: string;
 }
 
 const contentMap: Record<string, IndustryContent> = {
@@ -37,8 +34,7 @@ const contentMap: Record<string, IndustryContent> = {
       { prefix: "$", value: 1.8, suffix: "M", label: "Working capital improvement", decimals: 1 },
       { value: 5, label: "Successful fundraises supported" }
     ],
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
-    seoDescription: "Fractional CFO services for E-Commerce and DTC brands. Optimize inventory, automate Shopify/Amazon accounting, and scale profitably."
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
   },
   logistics: {
     title: "Logistics & Distribution",
@@ -61,8 +57,7 @@ const contentMap: Record<string, IndustryContent> = {
       { value: 7, suffix: " Days", label: "Consolidated close for 5 entities" },
       { value: 3, label: "Exits to Private Equity" }
     ],
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
-    seoDescription: "CFO services for Logistics, 3PL, and Distribution companies. Asset management, multi-entity accounting, and margin optimization."
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
   },
   trade: {
     title: "Import/Export & Freight",
@@ -85,8 +80,7 @@ const contentMap: Record<string, IndustryContent> = {
       { value: 15, suffix: "%", label: "Margin visibility improvement" },
       { value: 100, suffix: "%", label: "Customs audit success" }
     ],
-    image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
-    seoDescription: "Financial leadership for Import/Export businesses. FX management, trade finance, and landed cost automation."
+    image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
   },
   manufacturing: {
     title: "Manufacturing",
@@ -109,8 +103,7 @@ const contentMap: Record<string, IndustryContent> = {
       { prefix: "$", value: 1.6, suffix: "M", label: "Profit from SKU rationalization", decimals: 1 },
       { value: 7, label: "ERP implementations" }
     ],
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
-    seoDescription: "CFO expertise for Manufacturers. Job costing, inventory valuation, and production margin analysis."
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
   }
 };
 
@@ -122,10 +115,6 @@ const IndustryPage: React.FC<{ type: string }> = ({ type }) => {
 
   return (
     <>
-      <SEO 
-        title={`${content.title} - CFO Services`} 
-        description={content.seoDescription}
-      />
       <section className="relative overflow-hidden bg-navy-900 pt-20 pb-24 text-center px-4">
         <ParallaxBackground imageUrl={content.image} />
         <FadeIn className="relative max-w-4xl mx-auto">

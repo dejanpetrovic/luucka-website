@@ -1,16 +1,10 @@
-
 import React from 'react';
 import { CheckCircle2, XCircle, ArrowRight } from 'lucide-react';
 import { Section, Button, Card, Badge, FadeIn, AccordionItem, ParallaxBackground } from '../../components/ui';
-import { SEO } from '../../components/SEO';
 
 const FractionalCFO = () => {
   return (
     <>
-      <SEO 
-        title="Fractional CFO Services for Middle Market" 
-        description="Part-time CFO expertise for companies $5M-$50M revenue. Strategic financial leadership, cash flow management, and board reporting without the full-time cost."
-      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-navy-900 pt-20 pb-24 text-center px-4">
         <ParallaxBackground imageUrl="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" />

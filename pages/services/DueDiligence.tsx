@@ -1,16 +1,10 @@
-
 import React from 'react';
 import { Section, Button, Card, Badge, FadeIn, ParallaxBackground, AccordionItem } from '../../components/ui';
 import { ShieldCheck, Search, AlertTriangle, FileText } from 'lucide-react';
-import { SEO } from '../../components/SEO';
 
 const DueDiligence = () => {
   return (
     <>
-      <SEO 
-        title="Financial Due Diligence Services (M&A)" 
-        description="Institutional-grade financial due diligence for middle-market M&A. Quality of Earnings (QofE), risk quantification, and post-close roadmaps. Fast turnaround."
-      />
       <section className="relative overflow-hidden bg-navy-900 pt-20 pb-24 text-center px-4">
         <ParallaxBackground imageUrl="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" />
         <FadeIn className="relative max-w-4xl mx-auto">

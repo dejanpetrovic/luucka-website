@@ -1,16 +1,10 @@
-
 import React from 'react';
 import { Section, Button, Card, Badge, FadeIn, ParallaxBackground, AccordionItem } from '../../components/ui';
 import { CheckCircle2, Zap, LayoutDashboard, FileSpreadsheet } from 'lucide-react';
-import { SEO } from '../../components/SEO';
 
 const CFOAutomation = () => {
   return (
     <>
-      <SEO 
-        title="CFO + Financial Automation Services" 
-        description="Automate your finance function. Reduce month-end close to 3 days using Make.com, APIs, and AI. Eliminate manual data entry."
-      />
       <section className="relative overflow-hidden bg-navy-900 pt-20 pb-24 text-center px-4">
         <ParallaxBackground imageUrl="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" />
         <FadeIn className="relative max-w-4xl mx-auto">

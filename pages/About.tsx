@@ -2,7 +2,6 @@
 import React from 'react';
 import { Section, Card, Badge, FadeIn, ParallaxBackground } from '../components/ui';
 import { CheckCircle2, Landmark, Wrench, CircleDollarSign } from 'lucide-react';
-import { SEO } from '../components/SEO';
 
 const ValueInfographic = () => (
   <Section className="bg-slate-50 border-y border-slate-200">
@@ -103,10 +102,6 @@ const ValueInfographic = () => (
 const About = () => {
   return (
     <>
-      <SEO 
-        title="About LUUCKA - Institutional CFO Expertise" 
-        description="Founded by a former EBRD Due Diligence Team Leader. We bring 25 years of institutional financial leadership to the middle market."
-      />
       <section className="relative overflow-hidden bg-navy-900 pt-24 pb-32 md:pt-32 md:pb-40 text-center px-4">
         {/* Parallax Background Image - Matches Home Page Strategy */}
         <ParallaxBackground imageUrl="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" />
